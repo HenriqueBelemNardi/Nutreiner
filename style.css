@@ -194,13 +194,6 @@ section {
     font-weight: 600;
     margin-bottom: 15px;
     color: #fff;
-}
-
-.team-member .role.treino {
-    background-color: var(--primary-color);
-}
-
-.team-member .role.nutricao {
     background-color: var(--primary-color);
 }
 
@@ -294,13 +287,13 @@ section {
 }
 
 /* ========================================= */
-/* SEÇÃO RESULTADOS                          */
+/* SEÇÃO RESULTADOS - COM SWIPER.JS          */
 /* ========================================= */
-
 
 #resultados {
     background: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.95)), url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
     padding: 80px 0;
+    position: relative; 
 }
 
 .section-title-results {
@@ -318,11 +311,16 @@ section {
     color: var(--primary-color);
 }
 
-.results-gallery {
+/* ESTILOS DO SWIPER */
+.results-swiper {
+    width: 100%;
+    padding-bottom: 50px; 
+}
+
+.swiper-slide {
     display: flex;
-    gap: 40px;
-    overflow-x: auto;
-    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .result-pair {
@@ -331,6 +329,8 @@ section {
     background-color: #282828;
     padding: 15px;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0; 
 }
 
 .result-image {
@@ -363,6 +363,43 @@ section {
     font-weight: 600;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color) !important; 
+    top: 55% !important; 
+    transform: translateY(-50%);
+    font-size: 25px !important;
+    width: 40px !important; 
+    height: 40px !important; 
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-prev {
+    left: 10px !important;
+}
+
+.swiper-button-next {
+    right: 10px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #777 !important; 
+    opacity: 1 !important;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color) !important; 
+}
+
+
 /* ========================================= */
 /* SEÇÃO PLANOS (VERSÃO FINAL)               */
 /* ========================================= */
@@ -370,7 +407,6 @@ section {
 #planos {
     position: relative;
     overflow: hidden;
-    /* CORREÇÃO: Usa uma única imagem de fundo temática com uma camada escura */
     background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
 }
 
@@ -434,6 +470,18 @@ section {
     color: var(--secondary-text-color);
     font-size: 0.9rem;
 }
+
+/* ================================================ */
+/* CLASSE ADICIONADA PARA O SUFIXO "/mês"           */
+/* ================================================ */
+.price-container .price .price-suffix {
+    font-size: 1.2rem; /* Tamanho menor */
+    font-weight: 400;  /* Fonte mais leve */
+    color: var(--secondary-text-color); /* Cor secundária */
+    margin-left: 5px; /* Espaçamento */
+}
+/* ================================================ */
+
 
 .plan-card-button {
     display: block;
@@ -551,13 +599,13 @@ section {
 
     /* --- Lógica do Menu Hamburger --- */
     .hamburger-menu {
-        display: flex; /* Torna o hamburger visível em telas mobile */
+        display: flex; 
         flex-direction: column;
         justify-content: space-around;
         width: 30px;
         height: 25px;
         cursor: pointer;
-        z-index: 1001; /* Garante que fique acima de outros conteúdos */
+        z-index: 1001; 
     }
 
     .hamburger-menu span {
@@ -569,14 +617,13 @@ section {
     }
 
     .menu-toggle {
-        display: none; /* Esconde o checkbox real */
+        display: none; 
     }
 
-    /* Esconde a navegação com os links por padrão no mobile */
     nav {
         display: none;
         position: absolute;
-        top: 70px; /* Posição do menu dropdown, logo abaixo do header */
+        top: 70px; 
         left: 0;
         width: 100%;
         background-color: #181818;
@@ -584,7 +631,7 @@ section {
     }
 
     nav ul {
-        flex-direction: column; /* Links um embaixo do outro */
+        flex-direction: column; 
         width: 100%;
         gap: 0;
     }
@@ -600,14 +647,10 @@ section {
         width: 100%;
     }
 
-    /* --- Lógica para mostrar o menu e animar o ícone --- */
-    
-    /* Quando o checkbox é marcado (pelo clique no label/hamburger)... */
     .menu-toggle:checked ~ nav {
-        display: flex; /* ...o menu de navegação aparece. */
+        display: flex; 
     }
     
-    /* Animação do ícone para um "X" */
     .menu-toggle:checked ~ .hamburger-menu span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -637,14 +680,28 @@ section {
         max-width: 350px;
         transform: scale(1);
     }
-    /* Ajuste de espaçamento da tag de destaque no mobile */
     .plan-tag {
-        top: -22px; /* Move a tag um pouco mais para cima, criando espaço */
+        top: -22px; 
     }
 
     #planos {
         background-image: none;
         background-color: var(--bg-color);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+         display: none !important; 
+    }
+
+    .result-image img {
+        width: 200px; 
+        height: 320px; 
+    }
+
+    .result-pair {
+        gap: 10px;
+        padding: 10px;
     }
 }
 
@@ -652,29 +709,25 @@ section {
 /* ESTILO DA BARRA DE ROLAGEM (SCROLLBAR)    */
 /* ========================================= */
 
-.results-gallery, .plans-container-cards {
+.plans-container-cards {
   scrollbar-width: thin;
   scrollbar-color: var(--primary-color) #282828;
 }
 
-.results-gallery::-webkit-scrollbar,
 .plans-container-cards::-webkit-scrollbar {
     height: 8px;
 }
 
-.results-gallery::-webkit-scrollbar-track,
 .plans-container-cards::-webkit-scrollbar-track {
     background: #282828;
     border-radius: 10px;
 }
 
-.results-gallery::-webkit-scrollbar-thumb,
 .plans-container-cards::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
     border-radius: 10px
 }
 
-.results-gallery::-webkit-scrollbar-thumb:hover,
 .plans-container-cards::-webkit-scrollbar-thumb:hover {
     background-color: #1ed760;
 }
