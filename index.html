@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NUtreiner - Consultoria Online</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg.svg">
+    <meta
+      name="description"
+      content="A consultoria online que une treino e nutrição para você alcançar seus objetivos. Conheça os planos da NUtreiner."
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta property="og:title" content="NUtreiner - Consultoria Online" />
+    <meta
+      property="og:description"
+      content="A consultoria que une treino e nutrição para seus objetivos."
+    />
+    <meta property="og:image" content="https://www.seusite.com/og-image.png" />
+    <meta property="og:url" content="https://www.seusite.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <header>
-    <div class="container">
+      <div class="container">
         <h2 class="logo">NUtreiner</h2>
-        
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <label class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </label>
 
         <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Quem Somos</a></li>
-                <li><a href="#como-funciona">Como Funciona</a></li>
-                <li><a href="#resultados">Resultados</a></li>
-                <li><a href="#planos">Planos</a></li>
-            </ul>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#planos">Planos</a></li>
+          </ul>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
     <main>
-        <section id="inicio">
-            <div class="container">
-                <div class="hero-text">
-                    <h1>Sua saúde e performance em primeiro lugar.</h1>
-                    <p>A consultoria online que une treino e nutrição para você alcançar seus objetivos.</p>
-                    <a href="#como-funciona" class="cta-button">Conheça nossa consultoria</a>
-                </div>
-            </div>
-        </section>
+      <section id="inicio">
+        <div class="container">
+          <div class="hero-text">
+            <h1>Sua saúde e performance em primeiro lugar.</h1>
+            <p>
+              A consultoria online que une treino e nutrição para você alcançar
+              seus objetivos.
+            </p>
+            <a href="#como-funciona" class="cta-button"
+              >Conheça nossa consultoria</a
+            >
+          </div>
+        </div>
+      </section>
 
-      <section id="sobre">
+      <section id="sobre" class="animate-on-scroll">
         <div class="container">
           <div class="section-title">
             <h2>Quem somos?</h2>
@@ -81,7 +102,7 @@
         </div>
       </section>
 
-      <section id="como-funciona">
+      <section id="como-funciona" class="animate-on-scroll">
         <div class="background-overlay"></div>
         <div class="container">
           <div class="section-title">
@@ -138,114 +159,154 @@
         </div>
       </section>
 
-        <section id="resultados">
-            <div class="container">
-                <div class="section-title-results">
-                    <h2>RESULTADOS DO<br><span class="highlight">#TEAM</span> NUtreiner</h2>
-                </div>
-                
-                <div class="swiper results-swiper">
-                    <div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide">
-                            <div class="result-pair">
-                                <div class="result-image">
-                                    <img src="images/fotoantes.png" alt="Foto de cliente antes da consultoria">
-                                    <div class="image-label">ANTES</div>
-                                </div>
-                                <div class="result-image">
-                                    <img src="images/fotodepois.png" alt="Foto de cliente após a consultoria">
-                                    <div class="image-label">DEPOIS</div>
-                                </div>
-                            </div>
-                        </div>
+      <section id="resultados" class="animate-on-scroll">
+        <div class="container">
+          <div class="section-title-results">
+            <h2>
+              RESULTADOS DO<br /><span class="highlight">#TEAM</span> NUtreiner
+            </h2>
+          </div>
 
-                        <div class="swiper-slide">
-                            <div class="result-pair">
-                                <div class="result-image">
-                                    <img src="images/fotoantes2.png" alt="Foto de cliente antes da consultoria">
-                                    <div class="image-label">ANTES</div>
-                                </div>
-                                <div class="result-image">
-                                    <img src="images/fotodepois2.png" alt="Foto de cliente após a consultoria">
-                                    <div class="image-label">DEPOIS</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+          <div class="swiper results-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="result-pair">
+                  <div class="result-image">
+                    <img
+                      src="images/fotoantes.png"
+                      alt="Foto de cliente antes da consultoria"
+                    />
+                    <div class="image-label">ANTES</div>
+                  </div>
+                  <div class="result-image">
+                    <img
+                      src="images/fotodepois.png"
+                      alt="Foto de cliente após a consultoria"
+                    />
+                    <div class="image-label">DEPOIS</div>
+                  </div>
                 </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="result-pair">
+                  <div class="result-image">
+                    <img
+                      src="images/fotoantes2.png"
+                      alt="Foto de cliente antes da consultoria"
+                    />
+                    <div class="image-label">ANTES</div>
+                  </div>
+                  <div class="result-image">
+                    <img
+                      src="images/fotodepois2.png"
+                      alt="Foto de cliente após a consultoria"
+                    />
+                    <div class="image-label">DEPOIS</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        
-        <section id="planos">
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="planos" class="animate-on-scroll">
         <div class="container">
           <div class="section-title">
             <h2>Planos Personalizados</h2>
             <p>Escolha o plano ideal pra você!</p>
           </div>
           <div class="plans-container-cards">
-            
             <div class="plan-card">
-                <h3>Plano Mensal</h3>
-                <div class="price-container">
-                    <span class="price">R$160<span class="price-suffix">/mês</span></span>
-                    <p>cobrado mensalmente</p>
-                </div>
-                <a href="https://wa.me/5579988692657?text=Oi,%20quero%20saber%20mais%20sobre%20o%20Plano%20Mensal" target="_blank" class="plan-card-button">Quero este!</a>
-                <ul class="plan-features">
-                    <li>Plano de treino 100% individualizado</li>
-                    <li>Plano alimentar personalizado</li>
-                    <li>Suporte rápido via WhatsApp</li>
-                    <li>Reavaliação periódica</li>
-                </ul>
+              <h3>Plano Mensal</h3>
+              <div class="price-container">
+                <span class="price"
+                  >R$160<span class="price-suffix">/mês</span></span
+                >
+                <p>cobrado mensalmente</p>
+              </div>
+              <a
+                href="https://wa.me/5579988692657?text=Oi,%20quero%20saber%20mais%20sobre%20o%20Plano%20Mensal"
+                target="_blank"
+                class="plan-card-button"
+                >Quero este!</a
+              >
+              <ul class="plan-features">
+                <li>Plano de treino 100% individualizado</li>
+                <li>Plano alimentar personalizado</li>
+                <li>Suporte rápido via WhatsApp</li>
+                <li>Reavaliação periódica</li>
+              </ul>
             </div>
 
             <div class="plan-card featured">
-                <div class="plan-tag">Melhor custo benefício</div>
-                <h3>Plano Trimestral</h3>
-                <div class="price-container">
-                    <span class="price">R$150<span class="price-suffix">/mês</span></span>
-                    <p>Total: R$450 (cobrado trimestralmente)</p>
-                </div>
-                <a href="https://wa.me/5579988692657?text=Oi,%20quero%20saber%20mais%20sobre%20o%20Plano%20Trimestral" target="_blank" class="plan-card-button">Quero este!</a>
-                <ul class="plan-features">
-                    <li>Plano de treino 100% individualizado</li>
-                    <li>Plano alimentar personalizado</li>
-                    <li>Suporte rápido via WhatsApp</li>
-                    <li>Reavaliação periódica</li>
-                    <li>Acesso ao grupo exclusivo</li>
-                </ul>
+              <div class="plan-tag">Melhor custo benefício</div>
+              <h3>Plano Trimestral</h3>
+              <div class="price-container">
+                <span class="price"
+                  >R$150<span class="price-suffix">/mês</span></span
+                >
+                <p>Total: R$450 (cobrado trimestralmente)</p>
+              </div>
+              <a
+                href="https://wa.me/5579988692657?text=Oi,%20quero%20saber%20mais%20sobre%20o%20Plano%20Trimestral"
+                target="_blank"
+                class="plan-card-button"
+                >Quero este!</a
+              >
+              <ul class="plan-features">
+                <li>Plano de treino 100% individualizado</li>
+                <li>Plano alimentar personalizado</li>
+                <li>Suporte rápido via WhatsApp</li>
+                <li>Reavaliação periódica</li>
+                <li>Acesso ao grupo exclusivo</li>
+              </ul>
             </div>
 
             <div class="plan-card">
-                <h3>Plano Semestral</h3>
-                <div class="price-container">
-                    <span class="price">R$143<span class="price-suffix">/mês</span></span>
-                    <p>Total: R$860 (cobrado semestralmente)</p>
-                </div>
-                <a href="https://wa.me/5579988692657?text=Oi,%20quero%20saber%20mais%20sobre%20o%20Plano%20Semestral" target="_blank" class="plan-card-button">Quero este!</a>
-                <ul class="plan-features">
-                    <li>Plano de treino 100% individualizado</li>
-                    <li>Plano alimentar personalizado</li>
-                    <li>Suporte rápido via WhatsApp</li>
-                    <li>Reavaliação periódica</li>
-                    <li>Acesso ao grupo exclusivo</li>
-                </ul>
+              <h3>Plano Semestral</h3>
+              <div class="price-container">
+                <span class="price"
+                  >R$143<span class="price-suffix">/mês</span></span
+                >
+                <p>Total: R$860 (cobrado semestralmente)</p>
+              </div>
+              <a
+                href="https://wa.me/5579988692657?text=Oi,%20quero%20saber%20mais%20sobre%20o%20Plano%20Semestral"
+                target="_blank"
+                class="plan-card-button"
+                >Quero este!</a
+              >
+              <ul class="plan-features">
+                <li>Plano de treino 100% individualizado</li>
+                <li>Plano alimentar personalizado</li>
+                <li>Suporte rápido via WhatsApp</li>
+                <li>Reavaliação periódica</li>
+                <li>Acesso ao grupo exclusivo</li>
+              </ul>
             </div>
-        </div>
+          </div>
 
-        <div class="quote-container">
-            <p>“Treinar dá disciplina, mas é a consistência que transforma o corpo e a mente.”</p>
+          <div class="quote-container">
+            <p>
+              “Treinar dá disciplina, mas é a consistência que transforma o
+              corpo e a mente.”
+            </p>
             <span>— Arnold Schwarzenegger</span>
-        </div>
+          </div>
 
-        <div class="final-cta-container">
-             <a href="https://wa.me/5579988692657?text=oi,%20quero%20saber%20mais%20do%20plano%20de%20vocês" target="_blank" class="whatsapp-button">
-                Venha fazer parte do nosso time
+          <div class="final-cta-container">
+            <a
+              href="https://wa.me/5579988692657?text=oi,%20quero%20saber%20mais%20do%20plano%20de%20vocês"
+              target="_blank"
+              class="whatsapp-button"
+            >
+              Venha fazer parte do nosso time
             </a>
             <a
               href="https://chat.whatsapp.com/FhMC2VRc6XN5D2ZvPvoSWS"
@@ -254,47 +315,43 @@
             >
               Entre no nosso grupo free
             </a>
+          </div>
         </div>
-    </div>
-</section>
-</main> 
+      </section>
+    </main>
 
-<footer>
-    <div class="container">
+    <a id="backToTopButton" href="#inicio">
+      <span>⬆</span>
+    </a>
+
+    <footer>
+      <div class="container">
         <p>&copy; 2025 NUtreiner. Todos os direitos reservados.</p>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.results-swiper', {
-        loop: true, 
-        autoplay: { 
-            delay: 3000, 
-            disableOnInteraction: false,
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".results-swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
-        speed: 800, 
-        spaceBetween: 30, 
+        speed: 800,
+        spaceBetween: 30,
         breakpoints: {
-            768: {
-                slidesPerView: 2, 
-                centeredSlides: false,
-            },
-            0: {
-                slidesPerView: 1, 
-                centeredSlides: true,
-            }
+          768: { slidesPerView: 2, centeredSlides: false },
+          0: { slidesPerView: 1, centeredSlides: true },
         },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        pagination: { el: ".swiper-pagination", clickable: true },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-    });
-</script>
+      });
+    </script>
 
-</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
